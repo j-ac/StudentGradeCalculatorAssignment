@@ -36,6 +36,7 @@ def print_grade_table(grades, weights):
 grades = []
 weights = []
 
+print("Please enter your grades per line as <GRADE> <WEIGHT>")
 for line in sys.stdin:
     if line.rstrip() == "DONE":
         if sum(weights) > 100:
@@ -59,5 +60,6 @@ for line in sys.stdin:
 # Effective variable/function names
 # Effective comments (has comments, but they are not obvious and redundant)
 # The student improved upon the basic requirements with a few innovations
-#   - Frame
+#   - Table has a frame
 #   - Checks if weights add up to over 100%
+#   - Prompts the user with an explanation of how to use the program
